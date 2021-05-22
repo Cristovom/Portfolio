@@ -249,9 +249,7 @@ body{
 .form{
     grid-area: form;
     display: grid;
-    grid-row: 1 / -1;
-    grid-column: 2 / 3;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 6vh 1vw;
     /* width: min(100vw, 80%); */
     align-items: center;
@@ -264,24 +262,26 @@ body{
     color: rgba(255, 255, 255, 0.7);
     padding: 0vh 2vw;
     font-size: 1.4em;
-    margin-top: 4vh;
+    /* margin-top: 4vh; */
 }
 
-.form input{
+.form label input{
     text-decoration: none;
     color: #ffffff;
     background: transparent;
     border: none;
+    border-radius: 2px;
     border-bottom: 1px solid #fff;
     font-size: 1.125em;
-    padding: 0.7vh 4vw;
+    padding: 0.7vh 30%;
     margin-top: 2vw;
     transition: .5s ease-in;
 }
 
-.form input:focus,
-.form input:active{
+.form label input:focus,
+.form label input:active{
     list-style: none;
+    border-radius: 2px;
     background: #fff;
     color: #000;
 }
@@ -353,9 +353,9 @@ body{
     }
     .form{
         display: grid;
-        grid-row: 1 / -1;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 6vh 0vw;
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr;
+        grid-gap: 2vh 0vw;
         /* width: min(100vw, 80%); */
         align-items: center;
         justify-items: center;
@@ -364,24 +364,28 @@ body{
     }
     .form label{
         color: rgba(255, 255, 255, 0.7);
-        padding: 0vh 0vw;
+        /* padding: 0vh 0vw; */
         font-size: 1.3em;
-        margin-top: 0vh;
-        margin-right: 10vw;
+        /* margin-top: 0vh; */
+        margin-right: 20vw;
+        /* grid-column: 1 / -1; */
     }
     
-    .form input{
+    .form label input{
         overflow-x: hidden;
+        grid-row: 1 / -1;
         text-decoration: none;
         color: #ffffff;
         background: transparent;
         border: none;
         border-bottom: 1px solid #fff;
+        border-radius: 2px;
         font-size: 1.125em;
-        padding: 0.7vh 0vw;
-        margin-top: 2vw;
+        width: min(50em, 70vw);
         transition: .5s ease-in;
-        margin-right: 5vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     .form button{
         font-size: 1.125em;
