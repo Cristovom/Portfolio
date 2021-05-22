@@ -34,17 +34,6 @@ body{
     }
 }
 
-@media (max-width: 900px){
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "header"
-        "main"
-        "redes"
-        ;
-    }
-}
-
 /* Wave and your animation */
 .wave{
     position: absolute;
@@ -60,7 +49,10 @@ body{
 
 @keyframes wave{
     from {
-        transform: translateX(-100px);
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-75px);
     }
 }
 
@@ -250,7 +242,7 @@ body{
     grid-area: form;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 6vh 1vw;
+    grid-gap: 6vh 0vw;
     /* width: min(100vw, 80%); */
     align-items: center;
     justify-items: center;
@@ -260,7 +252,7 @@ body{
 
 .form label{
     color: rgba(255, 255, 255, 0.7);
-    padding: 0vh 2vw;
+    padding: 0vh auto;
     font-size: 1.4em;
     /* margin-top: 4vh; */
 }
@@ -273,7 +265,7 @@ body{
     border-radius: 2px;
     border-bottom: 1px solid #fff;
     font-size: 1.125em;
-    padding: 0.7vh 30%;
+    padding: 0.7vh 1ch;
     margin-top: 2vw;
     transition: .5s ease-in;
 }
@@ -336,10 +328,11 @@ body{
     
     .title p{
         grid-column: 1 / -1;
+        grid-row: 2 /-2;
         font-size: 1.125em;
         color:rgba(255, 255, 255, 0.7);
         font-style: italic;
-        padding: 5vh 7vw 10vh;
+        padding: 5vh 0vw 1vh;
         padding-bottom: 10vh;
     }
     
@@ -360,7 +353,7 @@ body{
         align-items: center;
         justify-items: center;
         /* width: minmax(40vw); */
-        /* background: #ffff00; */
+        /* background: #727221; */
     }
     .form label{
         color: rgba(255, 255, 255, 0.7);
@@ -372,8 +365,6 @@ body{
     }
     
     .form label input{
-        overflow-x: hidden;
-        grid-row: 1 / -1;
         text-decoration: none;
         color: #ffffff;
         background: transparent;
@@ -381,19 +372,28 @@ body{
         border-bottom: 1px solid #fff;
         border-radius: 2px;
         font-size: 1.125em;
-        width: min(50em, 70vw);
+        min-width: 2vh 20vw;
         transition: .5s ease-in;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
     }
     .form button{
         font-size: 1.125em;
         padding: 1vh 7vw;
-        margin: 0vh 0vh 5vh;
+        margin: 0vh 0vh 2.5vh;
         margin-left: 5vw;
         color: #fff;
-        background: #202020;
+        background: linear-gradient(to left, #202020, #000);
         grid-column: 2 / -2;
+    }
+}
+
+/* RESPONSIVIDADE DO FORM */
+@media(max-width: 530px){
+    .form{
+        margin-left: 0vw;
+        padding-left: 10vw;
+    }
+    .form label input{
+        width: 42vw;
+        text-indent:0;
     }
 }
