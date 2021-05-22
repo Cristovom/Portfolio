@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+figure{
+    text-align: center;
+    padding: 2vh;
+}
+
+img{
+    max-width: 250px;
+    min-height: 166px;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+}
+
+body{
+    padding: 2em 5vw;
+}
+
+.header{
+    background: #000;
+    color: #fff;
+    padding: 2vh;
+    border-radius: 1.3em;
+}
+
+.header h1{
+    font-size: 1.125em;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    padding: 2vh 7vw;
+}
+
+.cards{
+    margin: 2em;
+    border: 1px #d0d0d0;
+}
+
+.cards h2{
+    font-size: 1.125em;
+    margin: .4em;
+}
+
+.cards p{
+    padding: 2ch;
+    text-align: justify;
+}

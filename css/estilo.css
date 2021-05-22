@@ -1,0 +1,431 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background: linear-gradient(to left, #202020, #000); /* #31a844, #04231c -- #ff2604, #630ef8 */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    overflow: hidden;
+    height: max(100vh, auto);
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas:
+        "header header header"
+        "redes main main"
+    ;
+}
+
+@media (max-width: 1200px){
+    .container{
+        grid-template-areas:
+            "header header"
+            "redes main"
+            "redes main"
+        ;
+    }
+}
+
+@media (max-width: 900px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "redes"
+        ;
+    }
+}
+
+/* Wave and your animation */
+.wave{
+    position: absolute;
+    position: fixed;
+    bottom:0;
+    top:100;
+    left:0;
+    right:0;
+    animation: wave 5s ease-in-out infinite alternate;
+    width: 120vw;
+    height: 100;
+}
+
+@keyframes wave{
+    from {
+        transform: translateX(-100px);
+    }
+}
+
+/* HEADER */
+
+.header{
+    position: fixed;
+    grid-area: header;
+    padding: 0.95em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    z-index:3;
+}
+
+.logo{
+    max-width: 350px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    background: linear-gradient(120deg, #fff, #505050 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}
+
+.header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0vh 10vw;
+}
+
+.header nav a{
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.125em;
+}
+
+.header nav a::after{
+    content: "";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.header nav a::after{
+    border-bottom: 2px solid #ffff00;
+    transform: scaleX(0);
+}
+
+.header nav a:focus::after,
+.header nav a:hover::after{
+    transform: scaleX(1);
+}
+
+/* RESPONSIVIDADE HEADER */
+@media(max-width: 688px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "nav"
+        ;
+        justify-items: center;
+    }
+    .header nav ul{
+        grid-area: nav;
+        display: flex;
+    }
+    .header nav a{
+        position: relative;
+        text-decoration: none;
+        padding: .3em;
+        margin: 0 .37em;
+        color: #fff;
+        font-size: .875em;
+    }
+}
+
+/* REDES SOCIAIS */
+
+.redes{
+    grid-area: redes;
+    padding: 5px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    height: 100vh;
+}
+
+.redes nav i{
+    font-size: 1.5em;
+    padding: 8px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.redes nav i:active,
+.redes nav i:hover{
+    text-shadow: 5px 5px 20px #fff;
+}
+
+/* MAIN */
+
+.main{
+    position: absolute;
+    grid-area: main;
+    z-index:1;
+    /* min-width:900px; */
+    padding: 0 14vw 0 14vw;
+    padding-top: 20vh;
+    display: grid;
+    margin: auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+        "title img"
+    ;
+}
+
+.title{
+    grid-area: title;
+    grid-row: 1 / -1;
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "titulo"
+        "p"
+        "a"
+    ;
+}
+
+.title h1{
+    grid-area: titulo;
+    grid-column: 1 / -1;
+    font-size: min(2.5em, 30vw);
+    border-left: 12px solid #ffff00;
+    padding: 0 0 0 15px;
+    align-self: center;
+    color: #fff;
+}
+
+.title p{
+    grid-area: p;
+    grid-row: 2/3;
+    font-size: 1.125em;
+    color:rgba(255, 255, 255, 0.7);
+    padding: 3vh 0px 0px 10px;
+    font-style: italic;
+}
+
+.title a{
+    grid-area: a;
+    width: auto;
+    /* grid-column: 1 / -1; */
+    text-decoration: none;
+    padding: 0.6em;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 2em;
+    color: #202020;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.title a:active,
+.title a:hover{
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.685);
+}
+
+.imagemDestaque{
+    grid-area: img;
+    display: grid;
+    grid-row: 1 / -1;
+    grid-column: 2 / 3;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    /* width: min(100vw, 80%); */
+    align-items: center;
+    justify-items: center;
+    width: minmax(40vw);
+    /* background: #ffff00; */
+}
+
+.imagemDestaque a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+    margin-left: 2.6vw;
+}
+
+.imagemDestaque img{
+    display: block;
+    object-fit: cover;
+    width: min(85%, 40vw);
+}
+
+@media(max-width: 1200px){
+    .header{
+        position: fixed;
+        background: linear-gradient(to left, #202020, #000);
+        border-bottom: 1px solid #fff;
+    }
+    .wave{
+        position: absolute;
+        position: fixed;
+        bottom:0;
+        top:100;
+        left:0;
+        right:0;
+        animation: wave 5s ease-in-out infinite alternate;
+        width: 120vw;
+        height: 100;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 14vh;
+    }
+    .title{
+        grid-row: 1 / -1;
+        max-height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titulo"
+            "p"
+            "a"
+        ;
+    }
+    
+    .title h1{
+        grid-area: titulo;
+        grid-column: 1 / -1;
+        font-size: min(2.5em, 30vw);
+        border-left: 12px solid #ffff00;
+        padding: 0 0 0 15px;
+        align-self: center;
+        color: #fff;
+    }
+    
+    .title p{
+        grid-area: p;
+        grid-row: 1/-1;
+        grid-column: 2/4;
+        font-size: 1.125em;
+        color:rgba(255, 255, 255, 0.7);
+        font-style: italic;
+        padding: 0vh 7vw;
+        padding-bottom: 10vh;
+    }
+    
+    .title a{
+        grid-area: a;
+        display: block;
+        margin: auto;
+        width: auto;
+        grid-row: 2 / -2;
+        grid-column: 1 / 4;
+        text-decoration: none;
+        padding: 0.6em 2vw;
+    }
+    .imagemDestaque{
+        padding: 5vh 0vw;
+        /* width: min(100vw, 80%); */
+        align-items: center;
+        justify-items: center;
+        width: minmax(40vw);
+        /* background: #ffff00; */
+    }
+    .imagemDestaque a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.125em;
+        padding-left: 5.6vw;
+    }
+    .imagemDestaque img{
+        display: block;
+        object-fit: cover;
+        width: min(70%, 30vw);
+    }
+}
+@media(max-width: 859px){
+    .header{
+        position: fixed;
+        background: linear-gradient(to left, #202020, #000);
+        border-bottom: 1px solid #fff;
+    }
+    .wave{
+        position: absolute;
+        position: fixed;
+        bottom:0;
+        top:100;
+        left:0;
+        right:0;
+        width: 180vw;
+        height: 100;
+    }
+    .main{  
+        padding-top: 17vh;
+    }
+    .title{
+        grid-row: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .title h1{
+        grid-column: 1 / -1;
+        font-size: min(2.5em, 30vw);
+        border-left: 12px solid #ffff00;
+        padding: 0 0 0 15px;
+        align-self: center;
+        color: #fff;
+    }
+    
+    .title p{
+        grid-row: 2/-2;
+        grid-column: 1/2;
+        font-size: 1.125em;
+        padding-bottom: 45vh;
+        padding-top: 3vh;
+    }
+    
+    .title a{
+        grid-row: 3 / -3;
+        grid-column: 1 / 2;
+    }
+    .imagemDestaque{
+        /* width: min(100vw, 80%); */
+        margin-top: -20vh;
+        align-items: center;
+        justify-items: center;
+        width: minmax(40vw);
+        /* background: #ffff00; */
+    }
+    .imagemDestaque a{
+        display: block;
+        text-decoration: none;
+        grid-column: 1 / -1;
+        width: 100%;
+        color: #fff;
+        font-size: 1.5em;
+        padding-left: 8.6vw;
+    }
+    .imagemDestaque img{
+        display: block;
+        object-fit: cover;
+        width: min(80%, 80vw);
+    }
+}

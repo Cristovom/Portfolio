@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Ciência de Dados </title> 
+</head>
+<body>
+	<h1 class="text-center font-weight-bold">Ciência de Dados</h1>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="detalhes.html">Detalhes</a>
+				</li>
+					<li class="nav-item">
+					<a class="nav-link" href="video.html">Video</a>
+				</li>
+					<li class="nav-item">
+					<a class="nav-link" href="contato.html">Contato</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0"></form>
+		</div>
+	</nav>
+	<section class="mb-4">
+		<h2 class="h1-responsive font-weight-bold text-center my-4">Fale com a gente</h2>
+		<p class="text-center w-responsive mx-auto mb-5">Preencha o Form abaixo para que a gente possa te atender o mais rapido possivel</p>
+		<div class="row">
+			<div class="col-md-12">
+				<form id="contact-form" name="contact-form" action="mail.php" >
+					<div class="row">
+						<div class="col-md-6">
+							<div class="md-form mb-0">
+								<input type="text" id="name" name="name" class="form-control">
+								<label for="name" class="">Seu Nome</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="md-form mb-0">
+								<input type="text" id="email" name="email" class="form-control">
+								<label for="email" class="">Seu email</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<br>
+							<h5>Sexo</h5>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+								<label class="form-check-label" for="flexRadioDefault1">
+									Masculino
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+								<label class="form-check-label" for="flexRadioDefault2">
+									Feminino  
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+								<label class="form-check-label" for="flexRadioDefault1">
+									Outros  
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h5 >Assunto</h5>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									Duvidas
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+								<label class="form-check-label" for="flexCheckChecked">
+									Parceria
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="" checked>
+								<label class="form-check-label" for="flexCheckChecked1">
+									Trabalhe Conosco
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="" checked>
+								<label class="form-check-label" for="flexCheckChecked2">
+									Outros
+								</label>
+							</div>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="md-form">
+								<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+								<label for="message">Sua Mensagem</label>
+							</div>
+						</div>
+					</div>
+				</form>
+				<br>
+				<div class="text-center text-md-center">
+					<a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
