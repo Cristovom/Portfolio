@@ -38,9 +38,9 @@ body{
     .container{
         grid-template-columns: 1fr;
         grid-template-areas:
-        "header"
-        "main"
-        "redes"
+        "header header"
+        "redes main"
+        "redes main"
         ;
     }
 }
@@ -162,6 +162,7 @@ body{
     grid-template-columns: 1fr;
     align-items: end;
     height: 100vh;
+    width: 10vw;
 }
 
 .redes nav i{
@@ -398,7 +399,7 @@ body{
         grid-row: 2/-2;
         grid-column: 1/2;
         font-size: 1.125em;
-        padding-bottom: 45vh;
+        padding-bottom: 50vh;
         padding-top: 3vh;
     }
     
