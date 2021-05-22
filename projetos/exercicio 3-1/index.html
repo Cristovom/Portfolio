@@ -1,27 +1,72 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 3 - Exercicio 1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>FAST FOOD</title>
 </head>
-<body style="max-height: 100vh; overflow: hidden;">
-    <h1 style="text-align: center; padding-top: 1vh;">O que é Linguagem de Programação</h1>
-    <p style="padding: 0vh 20vw;">
-        Uma linguagem de programação é um conjunto de símbolos e códigos usados para orientar a programação de estruturas no desenvolvimento da web.<br>
-        Saber como funciona uma linguagem de programação e como os relacionamos com ela por meio de softwares nos permite melhorar nossa produtividade e conquistar vantagens competitivas frente a concorrência...
-    </p>
-    <a style="margin-left: 46vw;" href="https://rockcontent.com/br/blog/linguagem-de-programacao/" target="_blank">Saiba Mais </a><br><br>
-    <a style="margin-left: 27vw;" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.profissionaisti.com.br%2Fwp-content%2Fuploads%2F2019%2F01%2F0-destaque-linguagens-de-programacao-2019.jpg&f=1&nofb=1"><img src="prog.jpg" height="300px"></a>
-    <footer style="
-    padding: 1vh 0 0;
-    background: #202020;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;">
-    <p>Cristovom Nunes Alves <b>RGM:26421178</b></p>
-    <p>Aplicações para Internet</p>
-    </footer>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#"><img class="logo" src="img/logo.png" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="asidenav">
+            <ul>
+                <li><a href="#"><img src="img/icones/pao.svg" alt="Bread"></a></li>
+                <li><a href="#"><img src="img/icones/cake.svg" alt="Cake"></a></li>
+                <li><a href="#"><img src="img/icones/coxa.svg" alt="Coxa"></a></li>
+                <li><a href="#"><img src="img/icones/pizza.svg" alt="Pizza"></a></li>
+                <li><a href="#"><img src="img/icones/hamburguer.svg" alt="Hamburguer"></a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <h1>Cardápio</h1>
+            <div class="cardapio-item">
+                <h2>Fillet de Frango</h2>
+                <img class="imagem" src="img/fillet.jpg" alt="Opção-1">
+                <p>Um filé ou filete é um corte macio e desossado de hortelã com gengibre, muito utilizado na gastronomia gaúcha.</p>
+                <a href="#"><span>R$ 22,99</span></a>
+            </div>
+            <div class="cardapio-item">
+                <h2>Pizza de Mussarela</h2>
+                <img class="imagem" src="img/pizza.png" alt="Opção-2">
+                <p>Pizza tradicional de mussarela para esquentar seu páladar nesta noite fria.</p>
+                <a href="#"><span>R$ 24,99</span></a>
+            </div>
+            <div class="cardapio-item">
+                <h2>Beef com Fritas</h2>
+                <img class="imagem" src="img/beef.jpg" alt="Opção-3">
+                <p>Beef com fritas, acompanha salada para sua alimentação saudavél do dia.</p>
+                <a href="#"><span>R$ 29,99</span></a>
+            </div>
+            <div class="cardapio-item">
+                <h2>Spaghetti ao Molho</h2>
+                <img class="imagem" src="img/spaghetti.jpg" alt="Opção-4">
+                <p>O 'Spaghetti alla Puttanesca é um prato elaborado com massa e com um molho denominado sugo alla puttanesca.</p>
+                <a href="#"><span>R$ 32,99</span></a>
+            </div>
+        </main>
+        <aside class="redesSociais">
+            <ul>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </aside>
+        <footer class="footer">
+            <p>Feito por Cris - 2021/04/16</p>
+        </footer>
+    </div>
 </body>
 </html>

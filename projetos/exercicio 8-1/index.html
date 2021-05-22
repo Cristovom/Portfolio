@@ -4,35 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Exercício 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    <title>Flexblog</title>
 </head>
 <body>
-    <header class="header">
-        <h1>Exercício 1 - Cristovam RGM: 26421178</h1>
+    <div class="superinfo-bg">
+        <div class="superinfo">
+            <p>Seg / Sex - 08:00 às 18:00</p>
+            <a href="tel:+5511999999999">+55 11 9999-9999</a>
+            <p>Av. Ali Perto, 38, Guarulhos - SP</p>
+        </div>
+    </div>
+    <header class="menu-bg">
+        <div class="menu">
+            <div class="menu-logo"><a href="#">FlexBlog</a></div>
+
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Produtos">Produtos</a></li>
+                    <li><a href="#Preco">Preço</a></li>
+                    <li><a href="#Qualidade">Qualidade</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="main">
-        <section class="cards">
-            <figure><img src="img/brasilia.jpg" alt="Imagem 1">Brasília</figure>
-            <hr>
-            <h2>Brasília</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos et quis vel rem aspernatur, itaque eum corporis facere nisi excepturi?</p>
-            <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.wQWp2FYwncPGwaG1relt3wHaE8%26pid%3DApi&f=1">Foto</a>
-        </section>
-        <section class="cards">
-            <figure><img src="img/fortaleza.jpg" alt="Imagem 1">Praia em Fortaleza</figure>
-            <hr>
-            <h2>Fortaleza</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos et quis vel rem aspernatur, itaque eum corporis facere nisi excepturi?</p>
-            <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fbd%2FSeashore_of_Fortaleza_(3).jpg%2F1280px-Seashore_of_Fortaleza_(3).jpg&f=1&nofb=1">Foto</a>
-        </section>
-        <section class="cards">
-            <figure><img src="img/bahia.jpg" alt="Imagem 1">Bahia</figure>
-            <hr>
-            <h2>Bahia</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dignissimos et quis vel rem aspernatur, itaque eum corporis facere nisi excepturi?</p>
-            <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.9n2caa-X2pL-GizWNUvcqAHaD4%26pid%3DApi&f=1">Foto</a>
-        </section>
-    </main>
+
+    <h1 class="introducao">Novos Valores e Propriedades de CSS</h1>
+
+    <section class="sobre" id="Sobre">
+        <div class="sobre-info">
+            <h1>Sobre</h1>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
+        </div>
+        <figure class="sobre-img">
+            <img src="img/sobre1.jpg" alt="sobre1">
+        </figure>
+        <figure class="sobre-img">
+            <img src="img/sobre2.jpg" alt="sobre2">
+        </figure>
+    </section>
+
+    <section class="produtos" id="Produtos">
+        <h1>Produtos</h1>
+        <div class="produtos-container">
+            <div class="produto-item purple">
+                <h2>Purple</h2>
+                <img src="img/produtos1.jpg" alt="Produto1">
+            </div>
+            <div class="produto-item pink">
+                <h2>Pink</h2>
+                <img src="img/produtos2.jpg" alt="Produto2">
+            </div>
+            <div class="produto-item blue">
+                <h2>Blue</h2>
+                <img src="img/produtos3.jpg" alt="Produto3">
+            </div>
+        </div>
+    </section>
+
+    <section class="preco" id="Preco">
+        <div class="preco-item">
+            <h2>Cobre</h2>
+            <span><sup>R$</sup>19</span>
+            <ul>
+                <li>Planos ilimitados</li>
+                <li>Acesso Restrito</li>
+                <li>Conteúdo Secreto</li>
+                <li>Suporte 24h</li>
+            </ul>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="preco-item">
+            <h2>Prata</h2>
+            <span><sup>R$</sup>39</span>
+            <ul>
+                <li>Planos ilimitados</li>
+                <li>Acesso Restrito</li>
+                <li>Conteúdo Secreto</li>
+                <li>Suporte 24h</li>
+                <li>Compra Exclusiva</li>
+            </ul>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="preco-item">
+            <h2>Ouro</h2>
+            <span><sup>R$</sup>79</span>
+            <ul>
+                <li>Planos ilimitados</li>
+                <li>Acesso Restrito</li>
+                <li>Conteúdo Secreto</li>
+                <li>Suporte 24h</li>
+                <li>Compra Exclusiva</li>
+                <li>Download dos Itens</li>
+            </ul>
+            <a href="#">Comprar</a>
+        </div>
+    </section>
+
+    <section class="qualidade" id="Qualidade">
+        <div class="qualidade-item">
+            <h2>Inteligente</h2>
+            <p>O que temos que ter sempre em mente é que a determnação clara de objetivos afeta positivamente a correta previsão</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Compacto</h2>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Econômico</h2>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Transparente</h2>
+            <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Opaco</h2>
+            <p>O que temos que ter sempre em mente é que a determinaçãi clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Sustentável</h2>
+            <p>O que temos que ter sempre em mente é que a determinaçãi clara de objetivos afeta positivamente a correta previsão</p>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-info">
+            <h1>Newsletter</h1>
+            <p>assine e fique por dentro das novidades</p>
+        </div>
+        <form action="" class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail">
+            <button type="submit">Assinar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>FlexBlog &copy Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>

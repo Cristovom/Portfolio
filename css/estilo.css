@@ -222,7 +222,7 @@ body{
     grid-row: 2/3;
     font-size: 1.125em;
     color:rgba(255, 255, 255, 0.7);
-    padding: 3vh 0px 0px 10px;
+    padding: 3vh 0px 4vh 10px;
     font-style: italic;
 }
 
@@ -261,10 +261,10 @@ body{
 }
 
 .imagemDestaque a{
-    display: block;
     text-decoration: none;
-    color: #fff;
-    font-size: 1.125em;
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875em;
     margin-left: 2.6vw;
 }
 
@@ -350,7 +350,7 @@ body{
     .imagemDestaque a{
         display: block;
         text-decoration: none;
-        color: #fff;
+        color: rgba(255, 255, 255, 0.7);
         font-size: 1.125em;
         padding-left: 5.6vw;
     }
@@ -419,8 +419,8 @@ body{
         text-decoration: none;
         grid-column: 1 / -1;
         width: 100%;
-        color: #fff;
-        font-size: 1.5em;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.125em;
         padding-left: 8.6vw;
     }
     .imagemDestaque img{
