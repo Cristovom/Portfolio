@@ -76,7 +76,7 @@ body{
     text-align: center;
     color: #fff;
     font-size: 2.5em;
-    background: linear-gradient(120deg, #fff, #505050 );
+    background: linear-gradient(120deg, #fff, #bd334f );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -175,7 +175,7 @@ body{
     grid-area: main;
     z-index:1;
     /* min-width:900px; */
-    padding: 0 14vw 0 14vw;
+    padding: 0 10vw;
     padding-top: 20vh;
     display: grid;
     margin: auto;
@@ -242,10 +242,12 @@ body{
     grid-area: form;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 6vh 0vw;
+    grid-gap: 3vh 0vw;
     /* width: min(100vw, 80%); */
     align-items: center;
-    justify-items: center;
+    /* justify-items: center; */
+    /* border: 1px solid #fff; */
+    margin: 10vh 3vw;
     /* width: minmax(40vw); */
     /* background: #ffff00; */
 }
@@ -260,13 +262,14 @@ body{
 .form label input{
     text-decoration: none;
     color: #ffffff;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.413);
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     border-bottom: 1px solid #fff;
-    font-size: 1.125em;
-    padding: 0.7vh 1ch;
-    margin-top: 2vw;
+    font-size: .875em;
+    padding: 1vh;
+    width: 30vw;
+    text-indent: 1.3ch;
     transition: .5s ease-in;
 }
 
@@ -274,17 +277,40 @@ body{
 .form label input:active{
     list-style: none;
     border-radius: 2px;
-    background: #fff;
-    color: #000;
+    /* background: #fff;
+    color: #000; */
 }
 
-.form button{
+/* .form button{
     font-size: 1.125em;
     padding: 2vh 7vw;
-    margin-left: 5vw;
-    color: rgb(255, 255, 255);
-    background: #000000;
+    margin-left: 1vw;
+    color: #000000;
+    background: #fff;
     grid-column: 2 / -2;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+ .email{
+    grid-area: a;
+    width: auto;
+    /* grid-column: 1 / -1; */
+    text-decoration: none;
+    padding: 0vh 0.2em;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 2em;
+    color: #202020;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.email:active,
+.email:hover{
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.685);
 }
 
 @media(max-width: 1200px){
@@ -349,9 +375,10 @@ body{
         grid-column: 1 / -1;
         grid-template-columns: 1fr;
         grid-gap: 2vh 0vw;
-        /* width: min(100vw, 80%); */
+        width: min(100vw, 80%);
         align-items: center;
-        justify-items: center;
+        /* justify-items: center; */
+        margin: 5% auto;
         /* width: minmax(40vw); */
         /* background: #727221; */
     }
@@ -360,29 +387,36 @@ body{
         /* padding: 0vh 0vw; */
         font-size: 1.3em;
         /* margin-top: 0vh; */
-        margin-right: 20vw;
+        /* margin-right: 20vw; */
         /* grid-column: 1 / -1; */
     }
     
     .form label input{
         text-decoration: none;
         color: #ffffff;
-        background: transparent;
+        background: rgba(0, 0, 0, 0.413);
         border: none;
         border-bottom: 1px solid #fff;
-        border-radius: 2px;
-        font-size: 1.125em;
-        min-width: 2vh 20vw;
+        border-radius: 5px;
+        font-size: .875em;
+        width: 100%;
         transition: .5s ease-in;
+        text-decoration: none;
+        text-indent: 1.3ch;
     }
-    .form button{
+    .email{
         font-size: 1.125em;
         padding: 1vh 7vw;
         margin: 0vh 0vh 2.5vh;
-        margin-left: 5vw;
         color: #fff;
-        background: linear-gradient(to left, #202020, #000);
+        background: linear-gradient(to top, #bd334f 10%, #202020 20%, #bd334f 90%);
+        border: .5px solid #fff;
         grid-column: 2 / -2;
+    }
+    .email:active,
+    .email:hover{
+        background: linear-gradient(to top, #bd334f 10%, #202020 20%, #bd334f 90%);
+        box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.685);
     }
 }
 
@@ -393,7 +427,7 @@ body{
         padding-left: 10vw;
     }
     .form label input{
-        width: 42vw;
+        width: 50vw;
         text-indent:0;
     }
 }

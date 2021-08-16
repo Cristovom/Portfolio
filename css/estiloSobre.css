@@ -84,7 +84,7 @@ body{
     text-align: center;
     color: #fff;
     font-size: 2.5em;
-    background: linear-gradient(120deg, #fff, #505050 );
+    background: linear-gradient(120deg, #fff, #276984 );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -118,7 +118,7 @@ body{
 }
 
 .header nav a::after{
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #fff;
     transform: scaleX(0);
 }
 
