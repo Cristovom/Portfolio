@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estiloContato.css">
     <title>Contato</title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdIrxQcAAAAAK1QvgqAYS1tAYHY3MVjDomD5iF3"></script>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <a href="#" class="logo">PORTFÓLIO</a>
+            <a href="../" class="logo">PORTFÓLIO</a>
             <nav>
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -51,14 +50,9 @@
                     <label for="#">Observação *
                         <input type="text" placeholder="Observação" required />
                     </label>
-                    <!-- <input type="text" id="g-recaptcha-response" /> -->
+                    <span class="g-recaptcha" data-sitekey="6LdIrxQcAAAAAK1QvgqAYS1tAYHY3MVjDomD5iF3"></span>
                 </form>
-                <button class="g-recaptcha email" 
-                    data-sitekey="reCAPTCHA_site_key" 
-                    data-callback='onSubmit' 
-                    data-action='submit'>Enviar Email
-                </button>
-                <!-- <a class="email" href="mailto:cristovom123@gmail.com?subject=Contato via Site" target="_blank">Enviar Email</a> -->
+                <a type="submit" class="email" data-sitekey="6LdIrxQcAAAAACmrLfz-Efk2PEvTp_vV0FnDeHzj" href="mailto:cristovom123@gmail.com?subject=Contato via Site" target="_blank">Enviar Email</a>
             </section>
         </main>
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -71,11 +65,13 @@
           "6LdIrxQcAAAAACmrLfz-Efk2PEvTp_vV0FnDeHzj"
         }
     </script> -->
+    
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdIrxQcAAAAAK1QvgqAYS1tAYHY3MVjDomD5iF3"></script>
     <script>
         function onClick(e) {
           e.preventDefault();
           grecaptcha.ready(function() {
-            grecaptcha.execute('reCAPTCHA_6LdIrxQcAAAAAK1QvgqAYS1tAYHY3MVjDomD5iF3', {action: 'submit'}).then(function(token) {
+            grecaptcha.execute('6LdIrxQcAAAAAK1QvgqAYS1tAYHY3MVjDomD5iF3', {action: 'submit'}).then(function(token) {
                 "6LdIrxQcAAAAACmrLfz-Efk2PEvTp_vV0FnDeHzj"
             });
           });

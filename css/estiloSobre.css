@@ -366,11 +366,11 @@ body{
         width: minmax(40vw); */
         display: none;
     }
-    .imagemDestaque img{
-        /* display: block;
+    /* .imagemDestaque img{
+        display: block;
         object-fit: cover;
         max-width: 100%;
         position: absolute;
-        bottom: 0; */
-    }
+        bottom: 0;
+    } */
 }
