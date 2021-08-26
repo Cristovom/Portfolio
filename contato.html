@@ -38,7 +38,7 @@
                 <p>Auto se desenvolver e acrescentar profissionalmente nas áreas de frontend e backend, para melhor ajudar a empresa.</p>
                 <a href="Cristovam_Nunes_Alves.pdf" target="_blank">Currículo</a>
             </section>
-            <section>
+            <section class="section-form">
                 <!-- <form action="https://formsubmit.co/cristovom123@gmail.com" method="POST" class="form"> -->
                 <form action="#" id="form" class="form">
                     <label for="#">Nome *
@@ -50,9 +50,10 @@
                     <label for="#">Observação *
                         <input type="text" placeholder="Observação" required />
                     </label>
-                    <span class="g-recaptcha" data-sitekey="6LdIrxQcAAAAAK1QvgqAYS1tAYHY3MVjDomD5iF3"></span>
+                    <div class="g-recaptcha captcha" data-sitekey="6Lc7oSQcAAAAAEUs81mgjsJoAyncYFFSNQ0pJInM" required></div>
                 </form>
-                <a type="submit" class="email" data-sitekey="6LdIrxQcAAAAACmrLfz-Efk2PEvTp_vV0FnDeHzj" href="mailto:cristovom123@gmail.com?subject=Contato via Site" target="_blank">Enviar Email</a>
+                <a type="submit" href="mailto:cristovom123@gmail.com?subject=Contato via Site" class="email" data-sitekey="6Lc7oSQcAAAAAB6Hp5haFg-qeiLAaFqi_8prva0c">Enviar Email</a>
+                <!-- <a type="submit" class="email" data-sitekey="6Lc7oSQcAAAAAB6Hp5haFg-qeiLAaFqi_8prva0c" href="mailto:cristovom123@gmail.com?subject=Contato via Site" target="_blank">Enviar Email</a> -->
             </section>
         </main>
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -66,17 +67,17 @@
         }
     </script> -->
     
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdIrxQcAAAAAK1QvgqAYS1tAYHY3MVjDomD5iF3"></script>
-    <script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6Lc7oSQcAAAAAEUs81mgjsJoAyncYFFSNQ0pJInM"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- <script>
         function onClick(e) {
           e.preventDefault();
           grecaptcha.ready(function() {
-            grecaptcha.execute('6LdIrxQcAAAAAK1QvgqAYS1tAYHY3MVjDomD5iF3', {action: 'submit'}).then(function(token) {
-                "6LdIrxQcAAAAACmrLfz-Efk2PEvTp_vV0FnDeHzj"
+            grecaptcha.execute('6Lc7oSQcAAAAAEUs81mgjsJoAyncYFFSNQ0pJInM', {action: 'submit'}).then(function(token) {
+                "6Lc7oSQcAAAAAB6Hp5haFg-qeiLAaFqi_8prva0c"
             });
           });
         }
-    </script>
-  
+    </script> -->
 </body>
 </html>

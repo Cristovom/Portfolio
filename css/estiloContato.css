@@ -142,6 +142,9 @@ body{
         color: #fff;
         font-size: .875em;
     }
+    .captcha{
+        display: none;
+    }
 }
 
 /* REDES SOCIAIS */
@@ -247,7 +250,7 @@ body{
     align-items: center;
     /* justify-items: center; */
     /* border: 1px solid #fff; */
-    margin: 10vh 3vw 3vh;
+    margin: 5vh 3vw 3vh;
     /* width: minmax(40vw); */
     /* background: #ffff00; */
 }
@@ -305,6 +308,7 @@ body{
     display: block;
     margin: auto;
     text-align: center;
+    cursor: pointer;
 }
 
 .email:active,
@@ -312,6 +316,13 @@ body{
     background: #fff;
     box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.685);
 }
+
+.captcha{
+    margin-left: 12%;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
 
 @media(max-width: 1200px){
     .header{
@@ -370,12 +381,18 @@ body{
         text-decoration: none;
         padding: 0.6em 2vw;
     }
+
+    .section-form {
+        padding: 0vh 17vw;
+    }
+
     .form{
         display: grid;
         grid-column: 1 / -1;
         grid-template-columns: 1fr;
         grid-gap: 2vh 0vw;
-        width: min(100vw, 80%);
+        /* width: min(100vw, 80%); */
+        width: 100%;
         align-items: center;
         /* justify-items: center; */
         margin: 5% auto;
@@ -399,7 +416,7 @@ body{
         border-bottom: 1px solid #fff;
         border-radius: 5px;
         font-size: .875em;
-        width: 100%;
+        min-width: 100%;
         transition: .5s ease-in;
         text-decoration: none;
         text-indent: 1.3ch;
@@ -409,25 +426,37 @@ body{
         padding: 1vh 7vw;
         margin: 0vh 0vh 2.5vh;
         color: #fff;
-        background: linear-gradient(to top, #bd334f 10%, #202020 20%, #bd334f 90%);
+        /* background: linear-gradient(to top, #bd334f 10%, #202020 20%, #bd334f 90%); */
+        /* background: linear-gradient(to top, #ffd0d9 10%, #202020 20%, #ffd0d9 90%); */
+        color: #202020;
         border: .5px solid #fff;
         grid-column: 2 / -2;
     }
     .email:active,
     .email:hover{
-        background: linear-gradient(to top, #bd334f 10%, #202020 20%, #bd334f 90%);
-        box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.685);
+        /* background: linear-gradient(to top, #bd334f 10%, #202020 20%, #bd334f 90%); */
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.685);
+    }
+    .captcha{
+        margin-left: min(19% 15%);
     }
 }
 
 /* RESPONSIVIDADE DO FORM */
 @media(max-width: 530px){
+    .section-form {
+        padding: 0vh 1vw;
+    }
     .form{
-        margin-left: 0vw;
-        padding-left: 10vw;
+        margin-left: 1vw;
+        padding-left: 5vw;
+        padding-right: 2vw;
     }
     .form label input{
         width: 50vw;
         text-indent:0;
+    }
+    .email {        
+        margin-left: 5vw;
     }
 }
