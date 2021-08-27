@@ -139,6 +139,15 @@ body{
 
 /* RESPONSIVIDADE HEADER */
 @media(max-width: 688px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "redes"
+        ;
+    }
     .header{
         display: grid;
         grid-template-columns: 1fr;
@@ -159,6 +168,10 @@ body{
         margin: 0 .37em;
         color: #fff;
         font-size: .875em;
+    }
+    .main{
+        padding: 20vh 0vw 0vh 4vw !important;
+        padding-top: 20vh;
     }
 }
 
