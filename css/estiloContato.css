@@ -110,7 +110,7 @@ body{
 }
 
 .header nav a::after{
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #d06c80;
     transform: scaleX(0);
 }
 

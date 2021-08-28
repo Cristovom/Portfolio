@@ -170,8 +170,7 @@ body{
         font-size: .875em;
     }
     .main{
-        padding: 20vh 0vw 0vh 4vw !important;
-        padding-top: 20vh;
+        padding: 20vh 0vw 10vh 20vw !important;
     }
 }
 
@@ -253,7 +252,7 @@ body{
     -webkit-text-stroke: .9px #a9bfff; */
 }
 .title h2{
-    font-size: min(1.3em, 30vw);
+    font-size: min(2em, 30vw);
     padding: 2vh 0 0 15px;
     align-self: center;
     color: #fff;
@@ -354,7 +353,7 @@ body{
 
     .title h2
     {
-        font-size: min(2.5em, 30vw);
+        font-size: min(1.7em, 30vw);
         padding: 2vh 0 0 15px;
         align-self: center;
         color: #fff;
