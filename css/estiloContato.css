@@ -57,7 +57,6 @@ body{
 }
 
 /* HEADER */
-
 .header{
     position: fixed;
     grid-area: header;
@@ -145,10 +144,12 @@ body{
     .captcha{
         display: none;
     }
+    .main{
+        padding: 20vh 10vw 2vh 10vw !important;
+    }
 }
 
 /* REDES SOCIAIS */
-
 .redes{
     grid-area: redes;
     padding: 5px;
@@ -172,7 +173,6 @@ body{
 }
 
 /* MAIN */
-
 .main{
     position: absolute;
     grid-area: main;
@@ -283,17 +283,6 @@ body{
     /* background: #fff;
     color: #000; */
 }
-
-/* .form button{
-    font-size: 1.125em;
-    padding: 2vh 7vw;
-    margin-left: 1vw;
-    color: #000000;
-    background: #fff;
-    grid-column: 2 / -2;
-    border-radius: 5px;
-    cursor: pointer;
-} */
 
  .email{
     grid-area: a;
@@ -426,15 +415,12 @@ body{
         padding: 1vh 7vw;
         margin: 0vh 0vh 2.5vh;
         color: #fff;
-        /* background: linear-gradient(to top, #bd334f 10%, #202020 20%, #bd334f 90%); */
-        /* background: linear-gradient(to top, #ffd0d9 10%, #202020 20%, #ffd0d9 90%); */
         color: #202020;
         border: .5px solid #fff;
         grid-column: 2 / -2;
     }
     .email:active,
     .email:hover{
-        /* background: linear-gradient(to top, #bd334f 10%, #202020 20%, #bd334f 90%); */
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.685);
     }
     .captcha{

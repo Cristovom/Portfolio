@@ -75,7 +75,6 @@ body{
 }
 
 /* HEADER */
-
 .header{
     position: fixed;
     grid-area: header;
@@ -170,12 +169,11 @@ body{
         font-size: .875em;
     }
     .main{
-        padding: 20vh 0vw 10vh 20vw !important;
+        padding: 20vh 0vw 15vh 20vw !important;
     }
 }
 
 /* REDES SOCIAIS */
-
 .redes{
     grid-area: redes;
     padding: 5px;
@@ -199,7 +197,6 @@ body{
 }
 
 /* MAIN */
-
 .main{
     position: absolute;
     grid-area: main;
@@ -372,17 +369,6 @@ body{
     }
 
     .imagemDestaque{
-        /* grid-row: 4 / -4;
-        grid-column: 1 / -1;
-        z-index: -1;
-        width: minmax(40vw); */
         display: none;
     }
-    /* .imagemDestaque img{
-        display: block;
-        object-fit: cover;
-        max-width: 100%;
-        position: absolute;
-        bottom: 0;
-    } */
 }
