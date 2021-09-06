@@ -171,6 +171,9 @@ body{
     .main{
         padding: 20vh 0vw 15vh 20vw !important;
     }
+    .title{
+        padding-bottom: 10vh;
+    }
 }
 
 /* REDES SOCIAIS */
@@ -337,6 +340,7 @@ body{
         grid-row: 1 / -1;
         display: grid;
         grid-template-columns: 1fr;
+        padding-bottom: 10vh;
     }
     
     .title h1{

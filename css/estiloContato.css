@@ -109,7 +109,7 @@ body{
 }
 
 .header nav a::after{
-    border-bottom: 2px solid #d06c80;
+    border-bottom: 2px solid #fff;
     transform: scaleX(0);
 }
 
@@ -140,6 +140,9 @@ body{
         margin: 0 .37em;
         color: #fff;
         font-size: .875em;
+    }
+    .header nav a::after{
+        border-bottom: 2px solid #d06c80;
     }
     .captcha{
         display: none;
@@ -224,7 +227,6 @@ body{
 .title a{
     grid-area: a;
     width: auto;
-    /* grid-column: 1 / -1; */
     text-decoration: none;
     padding: 0.6em;
     background: rgba(255, 255, 255, 0.8);
@@ -246,20 +248,14 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 3vh 0vw;
-    /* width: min(100vw, 80%); */
     align-items: center;
-    /* justify-items: center; */
-    /* border: 1px solid #fff; */
     margin: 5vh 3vw 3vh;
-    /* width: minmax(40vw); */
-    /* background: #ffff00; */
 }
 
 .form label{
     color: rgba(255, 255, 255, 0.7);
     padding: 0vh auto;
     font-size: 1.4em;
-    /* margin-top: 4vh; */
 }
 
 .form label input{
@@ -287,7 +283,6 @@ body{
  .email{
     grid-area: a;
     width: auto;
-    /* grid-column: 1 / -1; */
     text-decoration: none;
     padding: 0vh 0.2em;
     background: rgba(255, 255, 255, 0.8);
@@ -341,7 +336,6 @@ body{
         grid-template-columns: 1fr;
     }
     .title h1{
-        /* grid-row: 1 / -1; */
         grid-column: 1 / -1;
         font-size: min(2.5em, 10vw);
         border-left: 12px solid #fff;
@@ -380,21 +374,13 @@ body{
         grid-column: 1 / -1;
         grid-template-columns: 1fr;
         grid-gap: 2vh 0vw;
-        /* width: min(100vw, 80%); */
         width: 100%;
         align-items: center;
-        /* justify-items: center; */
         margin: 5% auto;
-        /* width: minmax(40vw); */
-        /* background: #727221; */
     }
     .form label{
         color: rgba(255, 255, 255, 0.7);
-        /* padding: 0vh 0vw; */
         font-size: 1.3em;
-        /* margin-top: 0vh; */
-        /* margin-right: 20vw; */
-        /* grid-column: 1 / -1; */
     }
     
     .form label input{
