@@ -150,6 +150,12 @@ body{
         color: #fff;
         font-size: .875em;
     }
+    .redes nav i {
+        animation: pulse 3s linear infinite;
+    }
+    .imagemDestaque{
+        margin-top: -10vh !important;
+    }
 }
 
 /* REDES SOCIAIS */
@@ -160,7 +166,7 @@ body{
     z-index: 2;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: end;
+    align-items: flex-end;
     height: 100vh;
     width: 10vw;
 }
@@ -174,7 +180,17 @@ body{
 
 .redes nav i:active,
 .redes nav i:hover{
-    text-shadow: 5px 5px 20px #fff;
+    text-shadow: 0px 0px 10px #fff;
+    animation: pulse 2s linear infinite alternate;
+}
+
+@keyframes pulse {
+    25%, 75%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(.9);
+    }
 }
 
 /* MAIN */
@@ -184,8 +200,7 @@ body{
     grid-area: main;
     z-index:1;
     /* min-width:900px; */
-    padding: 0 14vw 0 14vw;
-    padding-top: 20vh;
+    padding: 20vh 14vw 0 14vw;
     display: grid;
     margin: auto;
     grid-gap: 10px;
@@ -256,7 +271,7 @@ body{
     grid-gap: 20px;
     /* width: min(100vw, 80%); */
     align-items: center;
-    justify-items: center;
+    /* justify-content: center; */
     width: minmax(40vw);
     /* background: #ffff00; */
 }
@@ -384,6 +399,7 @@ body{
         grid-row: 1 / -1;
         display: grid;
         grid-template-columns: 1fr;
+        grid-gap: 40px;
     }
     
     .title h1{
