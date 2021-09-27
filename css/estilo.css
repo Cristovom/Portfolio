@@ -152,6 +152,7 @@ body{
     }
     .redes nav i {
         animation: pulse 3s linear infinite;
+        text-shadow: 0px 0px 4px #f5f5f5ac;
     }
     .imagemDestaque{
         margin-top: -10vh !important;
