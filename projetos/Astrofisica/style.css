@@ -166,7 +166,7 @@ body {
     padding: 30px 0px;
 }
 .card-flex {
-    padding: 30px 0px;
+    padding: 60px 0px;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -183,7 +183,8 @@ body {
     line-height: 18px;
     font-weight: 300;
     color: #202020;
-    padding: 20px 0px;
+    padding: 10px 0px 30px;
+    margin: 0;
 }
 .btn-green a {
     padding: 10px 30px;
