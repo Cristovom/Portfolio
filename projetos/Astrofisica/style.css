@@ -202,10 +202,8 @@ body {
     background: transparent;
 }
 .img-banner img {
-    width: 100%;
     background-size: cover;
     background-position: center center;
-    border-radius: 10px;
 }
 
 .aba-parceiros {
