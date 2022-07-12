@@ -1,6 +1,6 @@
 $(".menu-hamburguer").on('click', function() {
   $(".menu-itens").toggleClass("nav-open");
-  $("body").toggleClass("menu-active");
+  $("html").toggleClass("menu-active");
 });
 
 // PUXANDO DO HTML
